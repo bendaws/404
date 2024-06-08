@@ -1,10 +1,9 @@
 const ErrorText = document.getElementById("error");
 const ErrorCode = urlParams.get("error");
+const ErrorId = urlParams.get("id");
 
-if (ErrorCode == "0") {
-  ErrorText.innerHTML = "Unknown (" + ErrorCode + ")";
-if (ErrorCode == "1") {
-  ErrorText.innerHTML = "Page not found (" + ErrorCode + ")";
+if (ErrorCode != null && ErrorId != null) {
+  ErrorText.innerHTML = ErrorCode + "(" + ErrorCode + ")";
 } else {
-  ErrorText.innerHTML = "Unknown (" + ErrorCode + ")";
+  ErrorText.innerHTML = "Invalid parameters. http://err.bendaws.net/?id=404&error=page_not_found"
 }
