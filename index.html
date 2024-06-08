@@ -2,8 +2,6 @@
 
 <html>
   <head>
-    <title>Server Query Invalid</title>
-
     <style>
       body {
         margin: 0px;
@@ -15,14 +13,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: Arial;
       }
     </style>
   </head>
 
   <body>
     <div class="container">
-      <h1>There is no WWW location for this DNS query (404 / BDWE1)</h1>
+      <h1 id="error">No query selected. Please use the "?error" parameter.</h1>
     </div>
   </body>
+
+  <script src="errors.js"></script>
   
 </html>
